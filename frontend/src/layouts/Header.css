@@ -1,0 +1,214 @@
+/* Header Container */
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%; /* Changed from 93vw to 100% */
+  max-width: 100vw; /* Prevents overflow */
+  z-index: 1000;
+  left: 0; /* Ensures alignment to the left */
+  right: 0; /* Ensures it doesn't overflow */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+  
+  /* Logo Section */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .logo p {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    
+    list-style: none;
+    gap: 25px;
+    height: 100% !important;
+  }
+  
+  .nav-links li {
+   
+    height: 100% !important;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+    height: 100% !important;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: #a75de8 2px solid;
+    height: 100% !important;
+  }
+  
+  
+  
+  /* Contact Button */
+  .contact-btn {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 251, 251) !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-btn:hover {
+    background: #a75de8;
+    color: rgb(255, 255, 255);
+  }
+  
+
+  
+    
+  
+  
+ /* Style the submenu */
+.submenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  
+  position: absolute;
+  top: 100%; /* Position below the parent */
+  left: 0;
+  width: 100vw !important;
+  width: auto; /* Adjust width dynamically */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+ 
+  z-index: 1000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+/* Display submenu as a grid */
+.submenu ul {
+  
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Show submenu on hover */
+.services-submenu {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+  
+}
+
+/* Styling submenu items */
+.submenu li {
+  
+  text-align: left;
+ 
+  padding: 8px 12px;
+}
+
+.submenu li a {
+  align-content: center;
+
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+.submenu li a:hover {
+  background-color: #f1f1f1;
+  padding-left: 5px; /* Small animation effect */
+}
+
+
+/* Hamburger icon styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Hide nav links on mobile */
+@media (max-width: 768px) {
+
+  .header {
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    
+  }
+
+  .nav-links {
+    display: none !important;
+    flex-direction: column;
+    background-color: #fff !important; /* solid background */
+    position: fixed;
+    top: 54px;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  
+  }
+
+  .nav-links {
+    gap: 0px;
+  }
+
+  .nav-links.show-mobile {
+    display: flex !important;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    height: auto !important;
+    width: 100% !important;
+  }
+}

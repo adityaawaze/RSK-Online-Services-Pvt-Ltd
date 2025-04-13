@@ -1,0 +1,122 @@
+/* Main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
+  padding: 20px;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  gap: 20px;
+
+  justify-content: center;
+  width: 100vw;
+}
+ 
+ 
+
+/* Left column (Form) */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Right column (Contact Info) */
+.right-column {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%; 
+  gap: 15px;
+  background: linear-gradient(180deg, rgba(130, 65, 195, 0.10) 0%, rgb(255, 200, 42, 0.10) 100%);
+  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.right-column heading{
+  text-align: center;
+
+}
+
+/* Headings */
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0d7ff;
+}
+
+.submit {
+  background: #6a0dad;
+  color: white;
+}
+
+.submit:hover {
+  background: #570bb5;
+}
+
+/* Contact Info Boxes */
+.info-box {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  width: 100%;
+  height: 100px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+  }
+
+  .right-column {
+    margin-top: 20px;
+  }
+  
+}

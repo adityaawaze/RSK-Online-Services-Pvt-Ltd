@@ -1,0 +1,507 @@
+.about-us-container {
+  
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+
+  /* About Section */
+  .AboutUs-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 80px 0px 80px;
+    
+    background-color: #ffffff;
+    height: 100vh !important;
+    align-items: center;
+  }
+
+  .hero-top{
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 100vw;
+    align-items: center;
+    padding: 0px 80px;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(180deg, rgba(130, 65, 195, 0.10) 0%, rgb(255, 200, 42, 0.10) 100%);
+    background-size: cover;
+  }
+
+  .hero-text h2 {
+    font-size: 50px;
+    font-weight: 600 !important;
+    color: #000000;
+  }
+
+  .hero-text p{
+    font-size: 20px;
+    color: #4B5563;
+  }
+
+  .hero-image{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    
+    border-radius: 10px;
+   
+    opacity: 100%;
+  }
+ 
+
+  .hero-image img{
+    width: 100%;
+    height: 100%;
+    
+  object-fit: contain;
+    border-radius: 10px;
+   
+    opacity: 100%;
+  }
+
+  .hero-bottom p{
+    font-size: 20px;
+    color: #4B5563;
+    text-align: justify;
+    margin-top: 20px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .AboutUs-hero{
+      padding: 70px 20px 0px 20px;
+      height: fit-content !important;
+    }
+    .hero-top{
+      flex-direction: column;
+      height: fit-content;
+      padding: 0px 20px;
+  
+    }
+    .hero-text h2 {
+      font-size: 30px;
+    }
+    .hero-text p{
+      font-size: 16px;
+    }
+    .hero-bottom p{
+      font-size: 16px;
+      text-align: justify !important;
+      padding: 0px 20px;
+    }
+    .hero-image img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+  }
+
+  
+
+
+
+
+
+
+  
+  /* Mission & Vision */
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 80px;
+    background-image: url('../assets/VisionMissionbg.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    align-items: center;
+  }
+  
+  .mission, .vision {
+    width: 45%;
+    text-align: left;
+    
+    
+  }
+  
+  .mission h3, .vision h3 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600 !important;
+    color: #000000;
+  }
+
+  .mission h3 span, .vision h3 span {
+    background: linear-gradient(to right, #ffcc33, #9933ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .mission p, .vision p {
+    font-size: 20px;
+    color: #4B5563;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      padding: 30px 20px;
+      height: fit-content;
+    }
+    .mission, .vision {
+      width: 100%;
+      text-align: center;
+    }
+    .mission h3, .vision h3 {
+      font-size: 30px;
+    }
+    .mission p, .vision p {
+      font-size: 16px;
+      text-align: justify !important;
+    }
+    
+  }
+
+
+
+  /*core values*/
+  .core-values {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+   
+  }
+  
+  .core-values h2 {
+    margin: 20px 0px;
+    font-size: 72px;
+    font-weight: 600 !important;
+    
+  }
+  
+  .core-values h2 span {
+    background: linear-gradient(to right, #ffcc33, #9933ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .values-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: max-content;
+    margin: 30px auto;
+    background: white;
+    
+  }
+  
+  /* Align values in a staggered format like the second image */
+  .value-card:nth-child(1),
+  .value-card:nth-child(3),
+  .value-card:nth-child(5) {
+    justify-self: left;
+  }
+  
+  .value-card:nth-child(2),
+  .value-card:nth-child(4) {
+    justify-self: start;
+  }
+  
+  .value-card {
+    text-align: left;
+    max-width: 501px;
+  }
+  
+  .value-card h3 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffcc33, #9933ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .value-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .core-values {
+      padding: 0px 20px;
+    }
+    .core-values h2 {
+      font-size: 40px;
+    }
+    .values-container {
+      grid-template-columns: 1fr; /* Stack values on smaller screens */
+      gap: 20px;
+    }
+    .value-card h3 {
+      font-size: 30px;
+    }
+    .value-card p {
+      font-size: 14px;
+    }
+    
+  }
+
+
+  /* Leadership */
+  .leadership {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .leadership h2 {
+    text-align: left;
+    font-size: 55px;
+    font-weight: 600 !important ;
+    margin: 20px 0px;
+  }
+  
+  .leadership h2 span {
+    background: linear-gradient(to right, #FFC82A, #8241C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+  }
+  
+  .leaders {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+  
+  .leader-card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 260px; /* Set uniform width */
+  }
+  
+  .leader-card {
+    width: 260px; /* Set uniform width */
+    height: auto; /* Set uniform height */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  
+  .leader-card img {
+    width: 180px; /* Ensure uniform image size */
+    height: 180px;
+    object-fit: cover; /* Ensures images don't stretch */
+    aspect-ratio: 1; /* Ensures square aspect ratio */
+   
+   
+  }
+
+  .leader-card-info {
+    text-align: left;
+  }
+  
+  .leader-card-container img {
+    width: 100%;
+    height: min-content;
+    border-radius: 5px;
+   
+   
+   
+    
+  }
+  
+  .leader-card h3 {
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: center;
+  }
+
+
+ .linkedin-icon {
+    width: 20px !important; /* Adjust as needed */
+    height: 20px !important;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+  .leader-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.linkedin-icon:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .leadership {
+      padding: 0px 20px;
+    }
+    .leadership h2 {
+      font-size: 40px;
+    }
+    .leaders {
+      flex-direction: column; /* Stack leaders on smaller screens */
+      align-items: center; /* Center align items */
+    }
+    .leader-card-container {
+      width: 70vw; /* Full width on smaller screens */
+    }
+    .leader-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Impact */
+  .impact {
+    background: url(../assets/ourimpact.svg) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 80px;
+    background-color: white;
+    height: 100vh;
+    gap:100px;
+    justify-content: center;
+    
+  }
+  
+  .impact h2 {
+    font-size: 55px;
+    text-align: left;
+    font-weight: 600 !important ;
+    
+  }
+  
+  .impact h2 span {
+    background: linear-gradient(to right, #FFC82A, #8241C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+  }
+  
+  .impact-grid {
+    
+    display: flex;
+    flex-direction: row;
+   
+
+    
+    gap: 68.64px;
+    margin-top: 20px;
+  }
+  
+  .impact-card {
+    
+   
+    width: 270.36px;
+    height: 210px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .1) 0%, rgb(193, 160, 225, .1) 16% , rgb(130, 65, 195 , .1) 77% );
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    opacity: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .impact-card h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0%;
+  }
+
+  .impact-card p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0%;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .impact {
+      padding: 30px 20px !important;
+      
+      gap:0px;
+      background:none;
+    }
+    .impact h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+    .impact-grid {
+      margin: 0px;
+      padding: auto;
+      gap: 10px;
+      flex-direction: column; /* Stack impact cards on smaller screens */
+      align-items: center; /* Center align items */
+    }
+    .impact-card {
+      margin: 0px;
+
+      width: 90vw; /* Full width on smaller screens */
+      height: 100px; /* Adjust height for smaller screens */
+    }
+    .impact-card h3 {
+      font-size: 30px;
+    }
+    .impact-card p {
+      font-size: 16px;
+    }
+    
+  }

@@ -1,0 +1,64 @@
+.admin-login,
+.admin-dashboard,
+.blog-form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(160, 90, 200, 0.15);
+  text-align: left;
+}
+
+.admin-login h2,
+.admin-dashboard h2,
+.blog-form-container h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #aa5cc3;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+button {
+
+ 
+  border: none;
+  border-radius: 999px;
+  color: white;
+ 
+  cursor: pointer;
+}
+
+button.danger {
+  background: #ff4b5c;
+  margin-left: 1rem;
+}
+
+.admin-blog-list {
+  margin-top: 2rem;
+}
+
+.admin-blog-card {
+  background: #f9f9f9;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.admin-btns {
+  display: flex;
+  justify-content: flex-end;
+}

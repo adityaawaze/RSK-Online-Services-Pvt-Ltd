@@ -1,0 +1,144 @@
+
+
+.blog {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .blog h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  
+  .blog h2 span {
+    background: linear-gradient(to right, #f8c663, #aa5cc3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .blog-subtitle {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  .blog-description {
+    text-align: left;
+    color: #555;
+    font-size: 1rem;
+    max-width: 720px;
+    
+    line-height: 1.7;
+  }
+  
+  .blog-tabs {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  
+  .tab {
+    font-family: Montserrat, sans-serif;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: #f1f1f1;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .tab.active {
+    background: linear-gradient(to right, #f8c663, #aa5cc3);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(160, 90, 200, 0.3);
+  }
+  
+  .featured-heading {
+  
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-grid {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .blog-card {
+    background: linear-gradient(180deg, rgba(130, 65, 195, 0.10) 0%, rgb(255, 200, 42, 0.10) 100%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(160, 90, 200, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(160, 90, 200, 0.2);
+  }
+  
+  .blog-image-placeholder {
+    height: 160px;
+    background-color: #e4e4e4;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-meta {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .blog-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-snippet {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-author {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .read-more {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #aa5cc3;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+  
+  
+  
+  
+  
+ 
+  

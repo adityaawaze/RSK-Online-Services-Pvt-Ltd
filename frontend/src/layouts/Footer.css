@@ -1,0 +1,197 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(130, 65, 195, .1) 0%, rgb(255, 200, 42, .1) 100%);
+  color: #000000;
+  padding: 0px 80px;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0px 20px;
+  }
+
+  .careers {
+    text-align: left !important;
+    padding: 20px 0;
+    height: fit-content;
+  }
+  .careers h2{
+    font-size: 24px;
+  }
+  .careers p{
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+  }
+  .careers .explore-careers{
+    height: 32px;
+    width: fit-content;
+    font-size: 16px;
+    max-width: 220px;
+    margin: 0px auto;
+  }
+}
+
+.careers {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.info {
+  margin-top: 20px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.quick-links,
+.contact,
+.social-links,
+.wearehiring {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.wearehiring {
+  display: grid;
+  background: #fff;
+  border: #000 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  justify-items: center;
+  gap: 20px;
+  box-shadow: 0px 4px 4px 4px rgba(130, 65, 195, 0.4);
+}
+
+.wearehiring h4,
+.wearehiring p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  color: #000000;
+}
+
+.explore-careers {
+  width: 180px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 18px;
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  border: 0px;
+  box-shadow: 0px 4px 4px 4px rgba(130, 65, 195, 0.4);
+}
+
+.explore-careers:hover {
+  color: rgb(1, 0, 0);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px 4px rgba(130, 65, 195, 0.6);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 14px;
+  justify-content: space-between;
+   
+    
+}
+
+.footer-bottom p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: #000000;
+  justify-content: space-between;
+}
+
+.footer-bottom span {
+ 
+  font-size: 14px;
+  color: #000000;
+  padding: 0px;
+}
+
+/* ✅ Media Queries for responsiveness */
+@media (max-width: 480px) {
+  .info {
+    flex-direction: column;
+   
+    text-align: left;
+  }
+
+  .quick-links {
+   
+    flex-direction: column;
+    flex: auto;
+    
+  }
+
+  .quick-links h4{
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .quick-links ul {
+    padding: 0;
+    list-style: none;
+  }
+
+
+  .contact{
+    flex-direction: column;
+    flex: auto;
+  }
+
+  .contact h4 {
+    font-size: 20px;
+    margin: auto;
+  }
+  .contact p {
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+  }
+  .contact ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .wearehiring p{
+    font-size: 16px;
+
+  }
+
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+
+  .footer-bottom span {
+    float: none !important;
+    font-size: 10px;
+  }
+
+  .explore-careers {
+    width: 100%;
+    max-width: 220px;
+  }
+}

@@ -1,0 +1,103 @@
+/* Journey Section */
+.journey-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.journey-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Timeline line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(180deg, #FFC82A, #8241C3);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Container around timeline items */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background: #fff;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and Right alignment */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Circular markers */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, #FFC82A, #8241C3);
+    border-radius: 50%;
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even)::before {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+/* Year styling */
+.year {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #FFC82A, #8241C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Content box styling */
+.content-box {
+    background: linear-gradient(135deg, rgba(130, 65, 195, 0.1), rgba(255, 200, 42, 0.2));
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.content-box h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content-box p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
